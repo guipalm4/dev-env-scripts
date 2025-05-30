@@ -241,9 +241,9 @@ install_zsh_plugins() {
     fi
     
     if [[ $plugins_installed -eq 2 ]]; then
-        log_success "Plugins do zsh instalados"
+        log_success "Plugins do zsh instalados com sucesso"
     else
-        log_warning "Alguns plugins falharam, mas continuando..."
+        log_warning "Alguns plugins falharam ($plugins_installed/2), mas continuando..."
     fi
 }
 
