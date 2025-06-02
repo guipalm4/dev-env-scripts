@@ -400,4 +400,4 @@ Este projeto é fornecido "como está" sem garantias. Use por sua conta e risco.
 
 ---
 
-**Sistema de Backup Automatizado** - Feito para macOS com ❤️
+**Sistema de Backup Automatizado** - Feito para macOS com ☕️
