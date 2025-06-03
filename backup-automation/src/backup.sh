@@ -361,7 +361,7 @@ perform_full_backup() {
 
 # Função para limpeza de backups antigos
 cleanup_old_backups() {
-    local backup_root="$DESTINATION/backups"
+    local backup_root="$DESTINATION"
     local keep_days=${BACKUP_RETENTION_DAYS:-14}
     
     echo -e "${YELLOW}${BOLD}╔═══════════════════════════════════════════════════════════════╗${NC}"
@@ -438,6 +438,9 @@ case "${1:-incremental}" in
         exit 1
         ;;
 esac
+
+umount "$BACKUP_DESTINATION"
+
 
 echo -e "${BOLD}${WHITE}════════════════════════════════════════════════════════════════${NC}"
 echo -e "${GRAY}Fim: $(date)${NC}"
